@@ -14,7 +14,7 @@ class App extends Component {
   componentDidMount() {
     //Called after render()
     axios
-      .get("http://jsonplaceholder.typicode.com/users") //Fetch data
+      .get("https://jsonplaceholder.typicode.com/users") //Fetch data
       .then((response) => {
         this.setState({ monsters: response.data });
       })
